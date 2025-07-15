@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Payment - Kitter</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="payment-form">
+    <h2>Payment Details</h2>
+    <form action="payment-handler.php" method="post">
+      <label>Cardholder Name:</label>
+      <input type="text" name="cardholder" required />
+      <label>Card Number:</label>
+      <input type="text" name="cardnumber" maxlength="16" required />
+      <label>Expiry Date:</label>
+      <input type="text" name="expiry" placeholder="MM/YY" required />
+      <label>CVV:</label>
+      <input type="text" name="cvv" maxlength="3" required />
+      <button type="submit">Pay Now</button>
+    </form>
+  </div>
+</body>
+</html>
