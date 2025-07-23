@@ -6,44 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 
-    - primary meta tag
-  -->
+
   <title>Kitter - Hight Quality Pet Food</title>
   <meta name="title" content="Kitter - Hight Quality Pet Food">
   <meta name="description" content="This is an eCommerce html template made by codewithsadee">
 
-  <!-- 
-    - favicon
-  -->
+  
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
+ 
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
     rel="stylesheet">
 
-  <!-- 
-    - preload images
-  -->
+
   <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
 
 </head>
 
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
+  
 
   <header class="header" data-header>
     <div class="container">
@@ -93,13 +81,15 @@
           <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <button class="action-btn" aria-label="cart">
-          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-              <li><a href="cart.html"></a></li>
-          <span class="btn-badge">0</span>
-        </button>
+        <button class="action-btn" aria-label="cart" id="cartToggle">
+  <ion-icon name="bag-handle-outline"></ion-icon>
+  <span class="btn-badge">2</span>
+</button>
 
       </div>
+     
+
+
 
     </div>
   </header>
@@ -111,10 +101,20 @@
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
+      
+<div id="cartPanel" class="cart-panel">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button id="closeCart">&times;</button>
+  </div>
+  <div id="cartItems" class="cart-items">
+    
+  </div>
+  <div class="cart-footer">
+    <p>Total: <span id="cartTotal">$0.00</span></p>
+    <a href="checkout.php" class="btn">Checkout</a>
+  </div>
+</div>
       <section class="section hero has-bg-image" id="home" aria-label="home"
         style="background-image: url('./assets/images/hero-banner.jpg')">
         <div class="container">
@@ -134,9 +134,7 @@
 
 
 
-      <!-- 
-        - #CATEGORY
-      -->
+     
 
       <section class="section category" aria-label="category">
         <div class="container">
@@ -231,9 +229,7 @@
 
 
 
-      <!-- 
-        - #OFFERS
-      -->
+      
 
       <section class="section offer" aria-label="offer">
         <div class="container">
@@ -294,10 +290,7 @@
 
 
 
-      <!-- 
-        - #PRODUCT
-      -->
-
+      
       <section class="section product" id="shop" aria-label="product">
         <div class="container">
 
